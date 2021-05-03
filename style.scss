@@ -27,15 +27,27 @@ a{
     margin: 0 auto;
 }
 .header{
-    padding-top: 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
     &-item{
         display: inline-block;
         padding: 10px;
     }
+}
+.scroll-header{
+    background-color: $header-color;
+    opacity: 1.6;
+    box-shadow: 0 1px 4px rgba(0,0,0,.1);
+}
+
+nav{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .button {
     padding: 15px 50px;
@@ -75,6 +87,7 @@ a{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: 120px;
     &-left{
         width: 35%;
         margin-top: 70px;
@@ -115,10 +128,20 @@ a{
         margin: 0 auto;
     }
 }
-.img-heading {
-    width: 85%;
+.active-link {
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        left: 45%;
+        bottom: -.15rem;
+        width: 5px;
+        height: 5px;
+        background-color: $primary-color;
+        border-radius: 50%;
+    }
 }
-.contagion{
+.heading{
     text-align: center;
     &-title{
         font-size: 25px;
@@ -136,6 +159,10 @@ a{
         line-height: 1.6;
         margin-bottom: 2rem;
     }
+    &-img{
+        padding: 2rem 3rem;
+        width: 80%;
+    }
 }
 .box {
     display: grid;
@@ -145,7 +172,7 @@ a{
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        flex-wrap: wrap;
         background-color: #f3f3f3;
         padding: 2rem 2.3rem;
         border-radius: 15px;
@@ -156,6 +183,7 @@ a{
     }
     &-img{
         padding-bottom: 1rem;
+        height: 330px;
     }
     &-title {
         font-size: 25px;
