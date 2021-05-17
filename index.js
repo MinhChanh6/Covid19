@@ -8,7 +8,6 @@ function scrollActive(){
     const scrollY = window.pageYOffset
     console.log(scrollY)
     sections.forEach(section =>{
-       
         const sectionHeight = section.offsetHeight;
         const sectionTop = section.offsetTop;
         if(scrollY >= (sectionTop - sectionHeight/3)){
