@@ -37,3 +37,39 @@ function changeBackground (){
 }
 
 window.addEventListener('scroll', changeBackground)
+
+//******** Animations ********// 
+const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
+const tl1 = gsap.timeline ({
+    srcollTrigger: {
+        trigger: '.todo',
+        start: 'center bottom',
+        pin: 'true'
+    }
+});
+tl1.from(".todo-img", {x: 200, opacity: 0 , duration:1.5})
+    .from(".todo-text",{y: 300, opacity:0 , duration: 1}, "=-1");
+tl.to(".text", { y: "0%", duration: 1.3, stagger: 0.25 });
+tl.to(".slider", { y: "-100%", duration: 1.5, delay: 0.5 });
+tl.to(".intro", { y: "-100%", duration: 1.5 }, "-=1.5");
+tl.fromTo("nav", { opacity: 0 }, { opacity: 1, duration: 1 });
+tl.fromTo(".content", { opacity: 0 }, { opacity: 1, duration: 1 });
+
+
+//******** Smooth-Sroll ********// 
+// var scroll = new SmoothScroll('.nav a[href*="#"]',{
+//     speed: 700
+// });
+
+var scroll = new SmoothScroll('.nav a[href*="#"]', {
+	// Function. Custom easing pattern
+	// If this is set to anything other than null, will override the easing option above
+	customEasing: function (time) {
+
+		// return <your formulate with time as a multiplier>
+
+		// Example: easeInOut Quad
+		return time < 0.5 ? 2 * time * time : -1 + (4 - 2 * time) * time;
+
+	}
+});

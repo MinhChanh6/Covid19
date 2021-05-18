@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Covid19-UI</title>
     <link href="/style.css" rel="stylesheet">
 </head>
 
@@ -19,16 +19,16 @@
                     </a>
                     <ul class="header-menu">
                         <li class="header-item home active-link">
-                            <a href="#home" class="header-link">Over Views</a>
+                            <a href="#" class="header-link">Over Views</a>
                         </li>
                         <li class="header-item contagion">
-                            <a href="#contagion" class="header-link">Contagion</a>
+                            <a href="#contagion" class="header-link ">Contagion</a>
                         </li>
                         <li class="header-item symptomps">
-                            <a href="#symptomps" class="header-link">Symptons</a>
+                            <a href="#symptomps" class="header-link ">Symptons</a>
                         </li>
-                        <li class="header-item">
-                            <a href="#" class="header-link">Prevention</a>
+                        <li class="header-item prevention">
+                            <a href="#prevention" class="header-link">Prevention</a>
                         </li>
                         <a href="#" class="button button-outline">Contact</a>
                     </ul>
@@ -36,7 +36,7 @@
             </header>
             <!-- Covid-19 Alert -->
             <section class="l-main" id="home">
-                <div class="content">
+                <div class="content content-home">
                     <div class="content-left">
                         <h3 class="content-title">
                             COVID-19 Alert
@@ -54,7 +54,7 @@
                 </div>
             </section>
             <section class="l-main" id="overview">
-                <div class="content">
+                <div class="content content-two">
                     <img src="images/Group 18557.png" alt="" class="content-image">
                     <div class="content-right">
                         <h3 class="content-title">
@@ -140,7 +140,7 @@
                     <img src="/images/Group 15442.png" alt="" class="heading-img">
                 </div>
             </section>
-            <section>
+            <section class="l-main">
                 <div class="heading">
                     <h4 class="heading-title">
                         Covid-19 Alert
@@ -169,7 +169,7 @@
                 </div>
                 <div class="todo">
                     <div class="todo-text">
-                        <h4 class="todo-title--two">Wash Your Hands</h4>
+                        <h4 class="todo-title todo-title--two">Wash Your Hands</h4>
                         <p class="todo-desc">
                             Continually seize impactful vortals rather than future-proof supply chains.
                             Uniquely exploit emerging niches via fully tested meta-services.
@@ -183,7 +183,7 @@
                 </div>
                 <div class="todo">
                     <div class="todo-text">
-                        <h4 class="todo-title">Wear Masks</h4>
+                        <h4 class="todo-title todo-title--three">Use Nose - Rag </h4>
                         <p class="todo-desc">
                             Continually seize impactful vortals rather than future-proof supply chains.
                             Uniquely exploit emerging niches via fully tested meta-services.
@@ -197,7 +197,7 @@
                 </div>
                 <div class="todo">
                     <div class="todo-text">
-                        <h4 class="todo-title">Wear Masks</h4>
+                        <h4 class="todo-title todo-title--four">Avoid Contacts</h4>
                         <p class="todo-desc">
                             Continually seize impactful vortals rather than future-proof supply chains.
                             Uniquely exploit emerging niches via fully tested meta-services.
@@ -211,7 +211,65 @@
                 </div>
             </section>
         </div>
+        <div class="wrapper-color container-footer">
+            <div class="container">
+                <section class="l-main">
+                    <div class="question">
+                        <div class="question-text">
+                            <h4 class="question-title">
+                                Have Question in mind ?
+                            </h4>
+                            <h5 class="question-title">
+                                Let us help you
+                            </h5>
+                        </div>
+                        <div class="question-send">
+                            <form action="">
+                                <div class="question-content">
+                                    <input type="text" class="question-input" placeholder="snmonydemo@gmail.com">
+                                    <a href="#" class="button button-active"> Send </a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+                <footer class="l-main">
+                    <div class="footer-content">
+                        <a href="#" class="header-logo footer-logo">
+                            <img src="/images/Logo.png" alt="">
+                        </a>
+                        <ul class="footer-menu">
+                            <li class="header-item"><a href="#home" class="header-link">Over Views</a></li>
+
+                            <li class="header-item contagion">
+                                <a href="#contagion" class="header-link">Contagion</a>
+                            </li>
+                            <li class="header-item symptomps">
+                                <a href="#symptomps" class="header-link">Symptons</a>
+                            </li>
+                            <li class="header-item">
+                                <a href="#" class="header-link">Prevention</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="footer-coppy">2021 &#169; All rights reserved by HoMinhChanh</p>
+                </footer>
+            </div>
+        </div>
+        <div class="intro">
+            <div class="intro-text">
+                <div class="intro-content">
+                    <h1 class="intro-highlight"> Lưu Ý !!! </h1>
+                    <span> Đeo khẩu trang khi ra khỏi nhà </span> </br> <span> để bảo vệ sức khoẻ bản thân </span> 
+                    </br>và cộng đồng trước <span class="intro-highlight"> COVID-19. </span>
+                    </br>cập nhật thông tin thường xuyên từ <span class="intro-highlight"> BỘ Y TẾ  </span>
+                </div>
+            </div>
+        </div>
+        <div class="slider"></div>
     </div>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
     <script src="/index.js"></script>
 </body>
 

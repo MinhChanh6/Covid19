@@ -23,6 +23,7 @@ p {
 
 .l-main {
   margin-top: 35px;
+  padding-bottom: 7rem;
 }
 
 .wrapper {
@@ -31,10 +32,18 @@ p {
   background-color: #FFFCFC;
 }
 
+.wrapper-color {
+  background-color: #fff1f1;
+}
+
 .container {
   max-width: 1380px;
   padding: 0 30px;
   margin: 0 auto;
+}
+
+.container-footer {
+  padding: 1.2rem 3rem;
 }
 
 .header {
@@ -47,7 +56,7 @@ p {
 
 .header-item {
   display: inline-block;
-  padding: 10px;
+  padding: 15px;
 }
 
 .scroll-header {
@@ -79,13 +88,21 @@ nav {
   border: 1px solid #FB4C47;
   color: #FB4C47;
   font-weight: bold;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.button-outline:hover {
+  background-color: #FB4C47;
+  color: #ffffff;
 }
 
 .button-active {
-  padding: 15px 30px;
+  padding: 15px 40px;
   background-color: #FB4C47;
   color: #FFFFFF;
   font-weight: bold;
+  font-size: 16px;
 }
 
 .button-opacity {
@@ -304,12 +321,60 @@ nav {
   color: #035755;
   font-size: 35px;
   line-height: 1.3;
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
   position: relative;
 }
 
-.todo-title::before {
+.todo-title--one::before {
   content: "01";
+  color: #FB4C47;
+  font-weight: bold;
+  display: block;
+  font-size: 35px;
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  background-color: #FFE1E1;
+  border-radius: 4rem;
+  text-align: center;
+  -webkit-transform: translateX(-150%);
+          transform: translateX(-150%);
+}
+
+.todo-title--two::before {
+  content: "02";
+  color: #FB4C47;
+  font-weight: bold;
+  display: block;
+  font-size: 35px;
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  background-color: #FFE1E1;
+  border-radius: 4rem;
+  text-align: center;
+  -webkit-transform: translateX(-150%);
+          transform: translateX(-150%);
+}
+
+.todo-title--three::before {
+  content: "03";
+  color: #FB4C47;
+  font-weight: bold;
+  display: block;
+  font-size: 35px;
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  background-color: #FFE1E1;
+  border-radius: 4rem;
+  text-align: center;
+  -webkit-transform: translateX(-150%);
+          transform: translateX(-150%);
+}
+
+.todo-title--four::before {
+  content: "04";
   color: #FB4C47;
   font-weight: bold;
   display: block;
@@ -328,5 +393,114 @@ nav {
   font-size: 20px;
   line-height: 1.8;
   font-weight: 300;
+}
+
+.question {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.question-text {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.question-title {
+  font-weight: bold;
+  color: #035755;
+  font-size: 35px;
+}
+
+.question-send {
+  border-radius: 30px;
+  outline: none;
+  background-color: #ffffff;
+  padding: .5rem 0;
+  width: 50%;
+  padding: .5rem 1rem;
+}
+
+.question-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.question-input {
+  outline: none;
+  border: none;
+}
+
+.footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-menu {
+  margin-left: 16rem;
+}
+
+.footer-coppy {
+  color: #035755;
+  text-align: center;
+  font-weight: initial;
+}
+
+.intro {
+  background-color: #FFFCFC;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.intro-text {
+  color: #035755;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.intro-highlight {
+  color: #FB4C47;
+  font-weight: bold;
+}
+
+.slider {
+  background-color: #fff1f1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
 }
 /*# sourceMappingURL=style.css.map */
