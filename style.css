@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Quicksand:wght@400;500;600&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Quicksand', sans-serif;
 }
 
 ul {
@@ -23,7 +25,7 @@ p {
 
 .l-main {
   margin-top: 35px;
-  padding-bottom: 7rem;
+  padding-bottom: 5rem;
 }
 
 .wrapper {
@@ -87,7 +89,7 @@ nav {
 .button-outline {
   border: 1px solid #FB4C47;
   color: #FB4C47;
-  font-weight: bold;
+  font-weight: 600;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
@@ -101,7 +103,7 @@ nav {
   padding: 15px 40px;
   background-color: #FB4C47;
   color: #FFFFFF;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 16px;
 }
 
@@ -110,7 +112,7 @@ nav {
   color: #FB4C47;
   padding: 20px 50px;
   position: relative;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .button-opacity::after {
@@ -222,7 +224,7 @@ nav {
 
 .heading-desc {
   line-height: 1.6;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .heading-img {
@@ -443,6 +445,7 @@ nav {
 .question-input {
   outline: none;
   border: none;
+  width: 100%;
 }
 
 .footer-content {
@@ -465,7 +468,7 @@ nav {
 }
 
 .intro {
-  background-color: #FFFCFC;
+  background-color: white;
   position: fixed;
   top: 0;
   left: 0;
@@ -491,6 +494,29 @@ nav {
 .intro-highlight {
   color: #FB4C47;
   font-weight: bold;
+}
+
+.intro-hide {
+  background: white;
+  overflow: hidden;
+}
+
+.intro-span {
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  display: inline-block;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+
+.intro p {
+  color: #035755;
+  font-size: 3.3rem;
+}
+
+.intro a {
+  color: #035755;
+  font-size: 1.5rem;
 }
 
 .slider {

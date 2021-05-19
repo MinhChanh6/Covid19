@@ -1,8 +1,11 @@
 @import 'variable';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Quicksand:wght@400;500;600&display=swap');
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Quicksand', sans-serif;
 }
 ul {
     list-style-type: none;
@@ -18,8 +21,7 @@ p{
 }
 .l-main {
     margin-top: 35px;
-    padding-bottom: 7rem;
-  
+    padding-bottom: 5rem;
 }
 .wrapper {
     max-width: 1440px;
@@ -60,6 +62,7 @@ nav{
     justify-content: space-between;
     align-items: center;
 }
+//* BUTTON STYLE *//
 .button {
     padding: 15px 50px;
     background-color: #FFFFFF;
@@ -67,7 +70,7 @@ nav{
     &-outline {
         border : 1px solid $primary-color;
         color: $primary-color;
-        font-weight: bold;
+        font-weight: 600;
         transition: all 0.3s;
         &:hover{
             background-color: $primary-color;
@@ -78,7 +81,7 @@ nav{
         padding: 15px 40px;
         background-color: $primary-color;
         color: #FFFFFF;
-        font-weight: bold;
+        font-weight: 600;
         font-size: 16px;
     }
     &-opacity{
@@ -86,7 +89,7 @@ nav{
         color:$primary-color;
         padding: 20px 50px;
         position: relative;
-        font-weight: bold;
+        font-weight: 600;
         &::after {
             content: "";
             position: absolute;
@@ -174,7 +177,7 @@ nav{
     }
     &-desc {
         line-height: 1.6;
-        margin-bottom: 2rem;
+        margin-bottom: 1.5rem;
     }
     &-img{
         padding: 2rem 3rem;
@@ -348,6 +351,7 @@ nav{
     &-input{
         outline: none;
         border: none;
+        width: 100%;
     }
 }
 .footer-content{
@@ -362,8 +366,8 @@ nav{
     text-align: center;
     font-weight: initial;
 }
-  .intro {
-    background-color: #FFFCFC;
+.intro {
+    background-color: white;
     position: fixed;
     top: 0;
     left: 0;
@@ -381,8 +385,26 @@ nav{
         color: $primary-color;
         font-weight: bold;
     }
-  }
-  .slider {
+    &-hide{
+        background: white;
+        overflow: hidden;
+    }
+    &-span{
+        transform: translateY(100%);
+        display: inline-block;
+        line-height: 1.2;
+        margin-bottom: 0.5rem;
+    }
+    p{
+        color: $section-color;
+        font-size: 3.3rem;
+    }
+    a{
+        color: $section-color;
+        font-size: 1.5rem;
+    }
+}
+.slider {
     background-color: #fff1f1;
     position: fixed;
     top: 0;
@@ -390,4 +412,4 @@ nav{
     width: 100%;
     height: 100%;
     transform: translateY(100%);
-  }
+}
