@@ -9,7 +9,7 @@ function scrollActive(){
     sections.forEach(section =>{
         const sectionHeight = section.offsetHeight;
         const sectionTop = section.offsetTop;
-        if(scrollY >= (sectionTop - sectionHeight/3)){
+        if(scrollY >= (sectionTop - sectionHeight/5)){
             sectionId = section.getAttribute('id')
         }
     })
@@ -46,8 +46,63 @@ tl.fromTo(".content", { opacity: 0 }, { opacity: 1, duration: 1 });
 
 
 //******** Smooth-Sroll ********// 
-var scroll = new SmoothScroll('.nav a[href*="#"]',{
+const scroll = new SmoothScroll('.nav a[href*="#"]',{
     speed: 650
 });
+//******** Sroll-Reveal ********// 
+const str = ScrollReveal(
+    {
+        distance: '60px',
+        duration: 2800,
+        reset:true,
+    }
+);
+
+str.reveal(`.content-image`,{
+    origin:'top',
+})
+
+str.reveal(`.content-right .content-title`,{
+    delay: 300,
+})
+
+str.reveal(`.content-right .content-titletwo`,{
+    delay: 500,
+})
+
+str.reveal(`.content-right .content-desc`,{
+    origin:'top',
+    interval:1400,
+})
+
+str.reveal(`.button-opacity`,{
+    origin:'top',
+    interval:1350,
+})
+
+
+str.reveal(`.box-items`,{
+    origin:'top',
+    interval: 200,
+})
+str.reveal(`.heading-symotomps`,{
+    origin:'top',
+})
+
+str.reveal(`.todo-text`,{
+    origin:'right',
+    interval: 500,
+})
+
+str.reveal(`.todo-img`,{
+    origin:'left',
+    interval: 500,
+})
+
+str.reveal(`.footer-coppy, .footer-content, .question`,{
+    origin:'bottom',
+    interval: 200,
+})
+
 
 
