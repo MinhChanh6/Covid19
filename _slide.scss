@@ -1,0 +1,47 @@
+.intro {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &-text {
+        color: $section-color;
+        font-size: 3rem;
+        text-align: center;
+    }
+    &-highlight {
+        color: $primary-color;
+        font-weight: bold;
+    }
+    &-hide{
+        background: white;
+        overflow: hidden;
+    }
+    &-span{
+        transform: translateY(100%);
+        display: inline-block;
+        line-height: 1.2;
+        margin-bottom: 0.5rem;
+    }
+    p{
+        color: $section-color;
+        font-size: 3.3rem;
+    }
+    a{
+        color: $section-color;
+        font-size: 1.5rem;
+    }
+}
+.slider {
+    background-color: #fff1f1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+}

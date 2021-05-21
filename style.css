@@ -25,7 +25,7 @@ p {
 }
 
 .l-main {
-  padding-top: 5rem;
+  padding-top: 6rem;
 }
 
 .wrapper {
@@ -36,7 +36,6 @@ p {
 
 .wrapper-color {
   background-color: #fff1f1;
-  height: 55vh;
 }
 
 .container {
@@ -46,7 +45,7 @@ p {
 }
 
 .container-footer {
-  padding: 2rem 3rem;
+  padding: 8rem 3rem;
 }
 
 .header {
@@ -163,7 +162,10 @@ nav {
   color: #FB4C47;
   font-weight: 700;
   font-size: 2rem;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+  height: 40px;
 }
 
 .content-titletwo {
@@ -173,22 +175,40 @@ nav {
   line-height: normal;
 }
 
+.content-titletwo--animation {
+  position: relative;
+  overflow: hidden;
+  height: 120px;
+}
+
 .content-desc {
   padding-top: 25px;
-  margin-bottom: 30px;
   font-size: 16px;
+  padding-bottom: 25px;
   line-height: 1.8;
   font-weight: 700;
 }
 
+.content-desc--animation {
+  position: relative;
+  overflow: hidden;
+  height: 100px;
+}
+
 .content-img {
-  width: 55%;
+  width: 100%;
   -webkit-transform: translateX(15px);
           transform: translateX(15px);
 }
 
 .content-right {
-  width: 40%;
+  width: 55%;
+}
+
+.content-right--animation {
+  position: relative;
+  overflow: hidden;
+  height: 50px;
 }
 
 .content-image {
@@ -206,7 +226,23 @@ nav {
 }
 
 .content-home {
-  margin-top: 20px;
+  margin-top: 40px;
+}
+
+.content-hide {
+  position: absolute;
+}
+
+.content-hide--img {
+  top: 0;
+  right: 0;
+  width: 100%;
+}
+
+.content-button--animation {
+  position: relative;
+  overflow: hidden;
+  height: 50px;
 }
 
 .heading {
@@ -415,6 +451,7 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-bottom: 3rem;
 }
 
 .question-text {
@@ -462,6 +499,7 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-bottom: 2rem;
 }
 
 .footer-menu {
@@ -472,6 +510,7 @@ nav {
   color: #035755;
   text-align: center;
   font-weight: 700;
+  margin-top: 1.2rem;
 }
 
 .intro {

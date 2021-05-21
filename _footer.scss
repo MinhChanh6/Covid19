@@ -1,0 +1,48 @@
+.question{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3rem;
+    &-text{
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+    &-title{
+        font-weight: bold;
+        color: $section-color;
+        font-size: 35px;
+    }
+    &-send{
+        border-radius: 30px;
+        outline: none;
+        background-color: #ffffff;
+        padding: .5rem 0;
+        width: 50%;
+        padding: .5rem 1rem;
+    }
+    &-content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-input{
+        outline: none;
+        border: none;
+        width: 100%;
+    }
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+.footer-menu{
+    margin-left: 16rem;
+    
+}
+.footer-coppy{
+    color: $section-color;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 1.2rem;
+}
