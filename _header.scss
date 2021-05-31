@@ -1,12 +1,46 @@
+@import 'mediaquery';
+
+
 .header{
     top: 0;
     left: 0;
     width: 100%;
     position: fixed;
-    z-index: 999;
+    z-index: 100;
     &-item{
         display: inline-block;
         padding: 15px;
+        transition: .3s all;
+        &--block{
+            @include tablet {
+                display: block;
+                margin: 15px 0;
+            }
+        }
+    }
+    &-menu{
+        @include tablet{
+            display: none;
+            position: fixed;
+            top: 70px;
+            left: 0;
+            right: 0;
+            width: 70%;
+            margin: 0 auto;
+            padding: 45px 0px;
+            text-align: center;
+            background-color: $header-color;
+            opacity: 1.6;
+            transition: .4s;
+            box-shadow: 0 1px 4px rgba(0,0,0,.1);
+            border-radius: 2rem;
+        }
+    }
+    a{
+        transition: 0.3 ease-in;
+    }
+    a:hover{
+        color:  $primary-color;
     }
 }
 .scroll-header{
@@ -15,15 +49,26 @@
     box-shadow: 0 1px 4px rgba(0,0,0,.1);
 }
 
-nav{
-    
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+
+.burger{
+    display: none;
+    @include tablet{
+        display: block;
+    }
+}
+.bx{
+    font-size: 35px;
+    color: black;
+    cursor: pointer;
+    @include mobile{
+        font-size: 30px;
+    }
 }
 
 .active-link {
     position: relative;
+   
     &::before{
         content: '';
         position: absolute;
@@ -33,5 +78,12 @@ nav{
         height: 5px;
         background-color: $primary-color;
         border-radius: 50%;
+    }
+}
+@include mobile{
+    .header{
+        &-logo{
+            width: 70%;
+        }
     }
 }

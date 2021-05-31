@@ -1,9 +1,10 @@
 .box {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(auto-fit, 25rem);
+    justify-content: center;
+    // grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-gap: 0 20px;
     padding: 3rem;
-    
     &-items{
         display: flex;
         flex-direction: column;
@@ -14,10 +15,6 @@
         border-radius: 15px;
         margin-bottom: 8rem;
         box-shadow: 0 1px 4px rgba(0,0,0,.1);
-        transition: 0.3 ease-in;
-        &:hover{
-            border-bottom:8px solid $primary-color;
-        }
     }
     &-text{
         text-align: center;
@@ -36,5 +33,37 @@
     &-desc{
         font-size: 21px;
         line-height: 1.8;
+    }
+}
+
+@include tablet {
+    .box{
+        &-items{
+            padding: 1.5rem 1rem;
+        }
+        
+    }
+}
+
+@include mobile{
+    .box{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 20rem);
+        justify-content: center;
+        padding: 0 .5rem;
+        grid-gap: 0 10px;
+        &-items{
+            padding: 1rem .5rem;
+        }
+        &-img{
+            height: 200px;
+        }
+        &-title{
+            font-size: 23px;
+        }
+        &-desc{
+            font-size: 18px;
+            line-height: normal;
+        }
     }
 }

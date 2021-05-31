@@ -1,3 +1,4 @@
+@import 'mediaquery';
 .button {
     padding: 15px 50px;
     background-color: #FFFFFF;
@@ -36,5 +37,11 @@
             opacity: 0.25;
             border-radius: 20px;
         }
+    }
+}
+
+@include tablet {
+    .button{
+        padding: 10px 20px;
     }
 }

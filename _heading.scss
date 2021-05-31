@@ -1,3 +1,4 @@
+@import 'mediaquery';
 .heading{
     text-align: center;
     &-title{
@@ -21,4 +22,22 @@
         padding: 2rem 3rem;
         width: 80%;
     }
+}
+@include mobile{
+    .heading{
+        &-title{
+            font-size: 20px;
+            line-height: normal;
+        }
+        &-titletwo{
+            font-size: 30px;
+        }
+        &-desc{
+            font-size: 15px;
+        }
+        &-img{
+            width: 100%;
+        }
+    }
+    
 }

@@ -1,4 +1,10 @@
 
+//******** Burger menu********// 
+
+$('.burger').on('click', function(){
+    $('.header-menu').slideToggle('300');
+})
+
 //******** Active-link menu********// 
 
 const sections = document.querySelectorAll('section[id]')
@@ -42,8 +48,7 @@ tl.to(".text", { y: "0%", duration: 1, stagger: 0.5 });
 tl.to(".slider", { y: "-100%", duration: 1, delay: 0.5 });
 tl.to(".intro", { y: "-100%", duration: 1 }, "-=1");
 tl.fromTo("nav", { opacity: 0 }, { opacity: 1, duration: 1 , delay: 1.5});
-// // tl.fromTo(".content-home", { opacity: 0 }, { opacity: 1, duration: 1 });
-
+tl.fromTo("burger", {opacity: 0}, {opacity: 1, duration: 1 , delay: 1.5})
 TweenMax.from(".content-left .content-title .content-hide", 1.5, {
     delay: 4,
     x: "-100%",
@@ -74,7 +79,7 @@ TweenMax.from(".content-button .content-hide", 1.5, {
 TweenMax.from(".content-right .content-hide--img", 1.5, {
     delay: 4,
     opacity: 0,
-    x: "70",
+    x: "40",
     ease: Expo.easeInOut
 });
 
@@ -127,12 +132,12 @@ str.reveal(`.heading-symotomps`, {
 })
 
 str.reveal(`.todo-text`, {
-    origin: 'right',
+    origin: 'top',
     interval: 500,
 })
 
 str.reveal(`.todo-img`, {
-    origin: 'left',
+    origin: 'top',
     interval: 500,
 })
 

@@ -1,0 +1,24 @@
+//** TABLET NGANG BREAKPOINT *//
+
+@mixin tablet-horizontal {
+    @media screen and(max-width: 1024px){ 
+        @content;
+    }
+}
+//** TABLET DỌC BREAKPOINT *//
+@mixin  tablet {
+    @media screen and (max-width: 768px){
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media screen and(max-width:375px){
+        @content;
+    }
+}
+@mixin small-mobile {
+    @media screen and (max-width: 320px){
+        @content;
+    }
+}
