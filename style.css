@@ -309,7 +309,7 @@ nav {
 .content-titletwo--animation {
   position: relative;
   overflow: hidden;
-  height: 120px;
+  height: 125px;
 }
 
 @media screen and (max-width: 1024px) {
